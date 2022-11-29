@@ -1,19 +1,54 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+ 
+@WebServlet("/userinput")
+public class Input extends HttpServlet {
+ 
+    protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws ServletException, IOException {
+         
+        // read form fields
+        String movieName = request.getParameter("movieName");
+        String genere = request.getParameter("genere");
+        String duration = request.getParameter("duration");
+        String director = request.getParameter("director");
+         
+        System.out.println("movie: " + movieName);
+        System.out.println("genere: " + genere);
+ 
+        // do some processing here...
+        try
+        {
+          // create a mysql database connection
+          String myDriver = "com.mysql.jdbc.Driver";
+          String myUrl = "jdbc:mysql://localhost:3306/UserDB";
+          Class.forName(myDriver);
+          Connection conn = DriverManager.getConnection(myUrl, "gaurav", "abhi1475");
+          // the mysql insert statement
+          String query = " insert into moviedatabase (title, genere, duration, director)"
+            + " values (?, ?, ?, ?);";
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+          // create the mysql insert preparedvstatement
+          PreparedStatement preparedStmt = conn.prepareStatement(query);
+          preparedStmt.setString (1, movieName);
+          preparedStmt.setString (2, genere);
+          preparedStmt.setInt(3, Integer.parseInt(duration));
+          preparedStmt.setString(4, director);
 
-<html>
-<head>
-<title>
-cinephile</title>
-
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
-</html>
+          // execute the preparedstatement
+          preparedStmt.execute();
+          
+          conn.close();
+          response.sendRedirect("options.jsp");
+        }
+        catch (Exception e)
+        {
+          System.err.println("Got an exception!");
+          System.err.println(e.getMessage());
+        }
