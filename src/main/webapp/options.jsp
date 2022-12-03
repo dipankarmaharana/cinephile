@@ -5,7 +5,7 @@
 
 
 <head>
-  <title>Cinephile</title>
+  <title>cinephile</title>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,20 +20,19 @@
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>LNM Talkies</b></a>
+      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>cinephile</b></a>
     </div>
   </div>
 </nav>
 
 <center>
-	<div style="float: left; margin-left: 350px;">
+	<div style="float: left; margin-left: 100px;">
 		<div class="testbox1">
 		  <h1>Add Movie</h1>
 		  <form action="userinput" method="POST">
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
 		  <input type="text" name="genere" placeholder="Genere" required/>
 		  <input type="text" name="duration" placeholder="Duration" required/>
-		  <input type="text" name="director" placeholder="Direction" required/>
 		  <br />
 		  <br />
 		   <input class="btn btn-primary" type="submit" value="ADD" >
@@ -41,7 +40,7 @@
 		</div>
 	</div>
 
-	<div style="float: right; margin-right: 350px;">
+	<div style="float: right; margin-right: 50px;">
 		<div style="float: left; margin-right: 150px;">
 			<div class="testbox2">
 			  <h1>Schedule Movie</h1>
@@ -88,12 +87,12 @@
 
 
 	            <%
-	                Class.forName("com.mysql.jdbc.Driver");
+	                Class.forName("oracle.jdbc.driver.OracleDriver");
 	                Connection conn = null;
-	                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/UserDB", "dipankar", "dipankar");
+	                conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "dipankar", "dipankar");
 	                Statement stmt = null;
 	                stmt = conn.createStatement();
-	                String query = "select * from moviedatabase";
+	                String query = "select * from Movies";
 	                ResultSet rs = null;
 	                rs = stmt.executeQuery(query);
 	                while(rs.next()){
@@ -102,12 +101,12 @@
 	                <%
 	                	int id = rs.getInt("id");
 	                    String title = rs.getString("title");
-	                    String genere = rs.getString("genere");
+	                    String genre = rs.getString("genre");
 	                
 	                %>
 	                <td><%=id %></td>
 	                <td><%=title %></td>
-	                <td><%=genere %></td>
+	                <td><%=genre %></td>
 	            </tr>               
 
 	            <%      
