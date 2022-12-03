@@ -30,8 +30,9 @@
 		<div class="testbox1">
 		  <h1>Add Movie</h1>
 		  <form action="userinput" method="POST">
+		  <input type="text" name="id" placeholder="Movie ID" required/>
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
-		  <input type="text" name="genere" placeholder="Genere" required/>
+		  <input type="text" name="genre" placeholder="Genre" required/>
 		  <input type="text" name="duration" placeholder="Duration" required/>
 		  <br />
 		  <br />
