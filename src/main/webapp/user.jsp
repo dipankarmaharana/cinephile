@@ -21,7 +21,7 @@
 </head>
 
 
-<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
+<div class="navbar navbar-inverse" style="margin-bottom:0px;">
 <div class="nav-container">
 	<div class="navbar-header">
 		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>Cinephile</b></a>
@@ -32,7 +32,7 @@
 		<!--       <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><b> Login</b></a></li> -->
 	</ul>
 </div>
-</nav>
+</div>
 
 <div id="carousel-example-generic" class="carousel slide container-fluid" data-ride="carousel">
   <!-- Indicators -->

@@ -13,6 +13,8 @@
 img{
 	height: 500px;
 	width: 350px;
+	border-radius:5px;
+/* 	object-fit: cover; */
 }
 
 .card-container{
@@ -31,4 +33,53 @@ body{
 	margin: 50px;
 	box-shadow: 5px 5px 20px black; 
 	overflow: hidden;
+}
+
+.intro{
+	height: 70px;
+	width: 350px;
+	padding:6px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 1095px;
+	background: rgb(27,27,27,0.5);
+	color: white;
+	transition:0.5s;
+}
+
+h1{
+	margin: 10px;
+	font-size: 40px;
+}
+
+p{
+	font-size: 20px;
+	margin: 20px;
+	visibility: hidden;
+	opacity: 0;
+/* 	bottom:1500px; */
+}
+
+span{
+	font-weight:bold;
+}
+
+.card:hover{
+	cursor:pointer;
+}
+
+.card:hover .intro{
+	height: 220px;
+	bottom: 240px;
+	background: black;
+}
+
+.card:hover p{
+	opacity: 1;
+	visibility: visible;
+}
+
+card:hover img{
+	transform: scale(111) rotate(-3deg);
+	
 }
