@@ -45,19 +45,19 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="Images/WhatsApp Image 2021-01-19 at 10.54.29 AM.jpeg" style="width:800px; height:500px;">
+      <img src="Images/Avatar-The-Way-Of-Water-Header.webp" style="width:1100px; height:600px;">
       <div class="carousel-caption">
         <b>Movie 1</b>
       </div>
     </div>
     <div class="item">
-      <img src="" alt="..." style="width:800px;height:500px;">
+      <img src="Images/black-panther-wakanda-forever-movie-review-002.jpg" alt="..." style="width:1100px;height:600px;">
       <div class="carousel-caption">
        <b>Movie 2</b>
       </div>
     </div>
     <div class="item">
-      <img src="" alt="..." style="width:800px;height:500px;">
+      <img src="Images/maxresdefault.jpg" alt="..." style="width:1100px;height:600px;">
       <div class="carousel-caption">
       <b>Movie 3</b>
       </div>
@@ -104,7 +104,7 @@
 <div class="card-container">
 	<div class="card">
 		<img alt="Movie 1"
-			src="Images/WhatsApp Image 2021-01-19 at 10.54.29 AM.jpeg">
+			src="Images/avatar.jpeg">
 		<div class="intro">
 			<h1>Movie 1</h1>
 			<p>This is movie 1</p>
@@ -114,7 +114,7 @@
 	
 	<div class="card">
 		<img alt="Movie 1"
-			src="Images/WhatsApp Image 2021-01-19 at 10.54.29 AM.jpeg">
+			src="Images/Drishyam 2.jpg">
 		<div class="intro">
 			<h1>Movie 2</h1>
 			<p>This is movie 2</p>
@@ -124,7 +124,7 @@
 	
 	<div class="card">
 		<img alt="Movie 1"
-			src="Images/WhatsApp Image 2021-01-19 at 10.54.29 AM.jpeg">
+			src="Images/Wakanda Forever.jpg">
 		<div class="intro">
 			<h1>Movie 3</h1>
 			<p>This is movie 3</p>
