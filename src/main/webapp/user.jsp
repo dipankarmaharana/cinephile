@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-<title>Cinephile</title>
+<title>cinephile</title>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,15 +24,44 @@
 <div class="navbar navbar-inverse" style="margin-bottom:0px;">
 <div class="nav-container">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>Cinephile</b></a>
+		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>cinephile</b></a>
 	</div>
 	<ul class="nav navbar-nav navbar-right">
-		<li><a href="#"><span class="glyphicon glyphicon-user"></span>
-				Login</a></li>
-		<!--       <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><b> Login</b></a></li> -->
+		<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>admin login</a></li> -->
+		       <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><b> admin login</b></a></li> -->
 	</ul>
 </div>
 </div>
+
+  <div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Admin Login</h4>
+          </div>
+          <div class="modal-body">
+            
+            <form action="login" method="POST">
+        <input type="text" name="Username" placeholder="Username">
+        &nbsp
+        <input type="password" name="Password" placeholder="Password">
+        <input type="submit" class="btn btn-primary">
+    </form>
+
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <div id="carousel-example-generic" class="carousel slide container-fluid" data-ride="carousel">
   <!-- Indicators -->
@@ -132,5 +161,112 @@
 
 	</div>
 </div>
+<form action="book" method="post">
+<div>
+<div class="container" style="float:left; margin-left:150px;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th>Select</th>
+                <th>Movie</th>
+                <th>Show Slot</th>
+                <th>Duration</th>
+                <th>Screen No.</th>
+                <th>Available</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <%
+                Class.forName("oracle.jdbc.driver.OracleDriver");
+                Connection conn = null;
+                conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "dipankar", "dipankar");
+                Statement stmt = null;
+                Statement stmt2 = null;
+                stmt = conn.createStatement();
+                stmt2 = conn.createStatement();
+                String query = "select * from Shows";
+                ResultSet rs = null;
+                rs = stmt.executeQuery(query);
+                while(rs.next()){
+            %>
+            
+                <%
+                    
+                    int id = rs.getInt("id");
+                  int Mid = rs.getInt("Mid");
+                  int screen = rs.getInt("screen");
+                  int slot = rs.getInt("slot");
+                  int avail = rs.getInt("booked");
+                  String query2 = "select title, duration from movies where id="+Mid;
+                  ResultSet rs2 = null;
+                    rs2 = stmt2.executeQuery(query2);
+                    String moviename=null;
+                    int duration=0;
+                    boolean a=true;
+                    while(a && rs2.next()){
+                      moviename = rs2.getString("title");
+                      duration= rs2.getInt("duration");
+                      a=false;
+                    }
+                    int start=0, end=0;
+                    if(slot==1){
+                      start=9;
+                      end=1;
+                    }
+                    else if(slot==2){
+                      start=1;
+                      end=5;
+                    }
+                    else if(slot==3){
+                      start=5;
+                      end=9;
+                    }
+                    if(screen==1){
+                    	avail=100-avail;
+                    }
+                    if(screen==2){
+                    	avail=100-avail;
+                    }
+                    if(screen==3){
+                    	avail=100-avail;
+                    }
+                
+                %>
+                
+                <tr>
+                <td><input type="radio" value=<%=id %> name="id"></td>
+                <td><%=moviename %></td>
+                <td><%=start %> to <%=end %></td>
+                <td><%=duration %> minutes</td>
+                <td><%=screen %></td>
+                <td><%=avail %></td>
+            </tr>               
+
+            <%      
+                }
+            %>
+
+        </tbody>
+    </table>
+  </div>
+</div>
+<div class="testbox3"  style="float:right; margin-right:150px;">
+        <h1>Book Movie</h1>
+       
+
+          <input type="number" name="num" placeholder="No. Of Seats">
+          <br />
+          <select name="class">
+              <option value="normal">Normal - Rs.250</option>
+              <option value="executive">Executive - Rs.300</option>
+              <option value="premium">Premium - Rs.350</option>
+        </select>
+          <br /><br />
+          <input class="btn btn-primary" type="submit" value="BOOK NOW">
+      
+</div>
+</form>
 
 </html>
