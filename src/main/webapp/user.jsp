@@ -236,12 +236,12 @@
                 %>
                 
                 <tr>
-                <td><input type="radio" value=<%=id %> name="id"></td>
-                <td><%=moviename %></td>
-                <td><%=start %> to <%=end %></td>
-                <td><%=duration %> minutes</td>
-                <td><%=screen %></td>
-                <td><%=avail %></td>
+                <td><input type="text" value=<%= id %> name="id"></td>
+                <td><%= moviename %></td>
+                <td><%= start %> to <%= end %></td>
+                <td><%= duration %> minutes</td>
+                <td><%= screen %></td>
+                <td><%= avail %></td>
             </tr>               
 
             <%      
