@@ -9,6 +9,24 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
+  <servlet>
+    <description></description>
+    <display-name>UserInput</display-name>
+    <servlet-name>UserInput</servlet-name>
+    <servlet-class>UserInput</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInput</servlet-name>
+    <url-pattern>/UserInput</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserInputTwo</display-name>
+    <servlet-name>UserInputTwo</servlet-name>
+    <servlet-class>UserInputTwo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInputTwo</servlet-name>
+    <url-pattern>/userinput</url-pattern>
+  </servlet-mapping>
 </web-app>
-

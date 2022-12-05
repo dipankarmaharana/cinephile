@@ -1,4 +1,4 @@
-<%@ page import="com.mysql.*" %>
+
 <%@ page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -29,7 +29,7 @@
 	<div style="float: left; margin-left: 100px;">
 		<div class="testbox1">
 		  <h1>Add Movie</h1>
-		  <form action="userinput" method="POST">
+		  <form action="userinput" method="post">
 		  <input type="text" name="id" placeholder="Movie ID" required/>
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
 		  <input type="text" name="genre" placeholder="Genre" required/>

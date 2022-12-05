@@ -1,4 +1,4 @@
-<%@ page import="com.mysql.*"%>
+
 <%@ page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -186,15 +186,12 @@
                 Statement stmt2 = null;
                 stmt = conn.createStatement();
                 stmt2 = conn.createStatement();
-                String query = "select * from Shows";
+                String query = "select * from shows";
                 ResultSet rs = null;
+                //out.println("Hi....");
                 rs = stmt.executeQuery(query);
                 while(rs.next()){
-            %>
-            
-                <%
-                    
-                    int id = rs.getInt("id");
+                  int id = rs.getInt("id");
                   int Mid = rs.getInt("Mid");
                   int screen = rs.getInt("screen");
                   int slot = rs.getInt("slot");
