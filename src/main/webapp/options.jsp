@@ -46,9 +46,10 @@
 			<div class="testbox2">
 			  <h1>Schedule Movie</h1>
 			  <form action="schedule" method="POST">
+			  <input type="text" name="showId" placeholder="Show ID">
 			  <input type="text" name="movieId" placeholder="Movie ID">
-	          <input type="text" name="screen" placeholder="Screen No.">
-	          <input type="text" name="slot" placeholder="Slot No.">
+	          <input type="text" name="screen" placeholder="Screen Number">
+	          <input type="text" name="slot" placeholder="Slot Number">
 	          <br />
 	          <br />
 			   <input class="btn btn-primary" type="submit" value="SCHEDULE">

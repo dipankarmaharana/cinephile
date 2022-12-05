@@ -256,9 +256,9 @@
           <input type="number" name="num" placeholder="No. Of Seats">
           <br />
           <select name="class">
-              <option value="normal">Normal - Rs.250</option>
+              <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
-              <option value="premium">Premium - Rs.350</option>
+              <option value="premium">Premium - Rs.320</option>
         </select>
           <br /><br />
           <input class="btn btn-primary" type="submit" value="BOOK NOW">
