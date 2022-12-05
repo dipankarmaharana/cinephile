@@ -233,7 +233,7 @@
                 %>
                 
                 <tr>
-                <td><input type="text" value=<%= id %> name="id"></td>
+                <td><input type="radio" value=<%= id %> name="id"></td>
                 <td><%= moviename %></td>
                 <td><%= start %> to <%= end %></td>
                 <td><%= duration %> minutes</td>

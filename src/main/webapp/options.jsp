@@ -60,7 +60,7 @@
 			<div class="testbox3">
 			  <h1>Delete Movie</h1>
 			  <form action="delete" method="POST">
-	        	<input type="text" name="movieName" placeholder="Movie Name">
+	        	<input type="text" name="id" placeholder="Movie ID">
 	        	<br />
 	        	<br />
 			    <input class="btn btn-primary" type="submit" value="DELETE">

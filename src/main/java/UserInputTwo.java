@@ -21,7 +21,7 @@ public class UserInputTwo extends HttpServlet {
          
         System.out.println("movie: " + movieName);
         System.out.println("genre: " + genre);
-        System.out.println("durTION: " + duration);
+        System.out.println("duration: " + duration);
         System.out.println("id: " + id);
  
   
