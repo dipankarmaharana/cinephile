@@ -48,7 +48,7 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            
+            <h2>admin login</h2>
             <form action="login" method="POST">
         <input type="text" name="Username" placeholder="Username">
         &nbsp
@@ -60,7 +60,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <!--  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
           </div>
         </div>
       </div>
@@ -258,24 +258,28 @@
 <div class="testbox3" id="book">
 <br>
         <!-- <div class="heading"><span id="hl3">book</span> tickets</div> -->
-       
-
-          <input type="number" name="num" placeholder="No. Of Seats">
-          <br>
+       <div>
+       <div class="t">
+       <input type="number" name="num" placeholder="No. Of Seats">
+          </div>
           <select name="class">
               <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
               <option value="premium">Premium - Rs.320</option>
         </select>
           <br /><br />
-          <input class="btn btn-primary" type="submit" value="BOOK NOW">
+          <input class="btn btn-primary" type="submit" value="book now">
+          
+          </div>
       
 </div>
 
 </form>
 
 <div class="footer">
-	<p class="footer-data">Copyright 2022 Cinephile India Pvt Ltd. All rights reserved.</p>
+	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</h5>
+	<br>
+	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
 </div>
 
 </body>

@@ -26,19 +26,27 @@
 	padding-bottom: 20px;
 }
 
-#hl,#hl2,#hl3{
+#hl,#hl2,#hl3,#hl4{
 	color:#FFE227;
+}
+
+.brand-footer{
+	color:white;
 }
 
 .footer-data{
 	color: white;
 	text-align: center;
+	
 }
 
 .footer{
 	width:100%;
 	position: absolute;
 	background-color: black;
+	color:white;
+	padding-top:35px;
+	padding-bottom: 20px;
 }
 .navbar-header{
 	padding-top: 20px;
@@ -143,4 +151,15 @@ card:hover img{
  
   
   
+}
+.btn{
+	background-color: black;
+}
+
+
+
+
+.btn:hover{
+	background-color:black;
+	color:#FFE227;
 }
