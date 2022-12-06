@@ -7,8 +7,9 @@
 
 
 @charset "UTF-8";
-
-
+#brand{
+	margin-left:125px;
+}
 
 img{
 	height: 500px;
@@ -33,6 +34,10 @@ body{
 	margin: 50px;
 	box-shadow: 5px 5px 20px black; 
 	overflow: hidden;
+}
+
+*{
+	font-family: 'Nunito', sans-serif;
 }
 
 .intro{
@@ -82,4 +87,9 @@ span{
 card:hover img{
 	transform: scale(111) rotate(-3deg);
 	
+}
+
+.textbox3{
+  text-align: center;
+  top: 50px
 }

@@ -14,6 +14,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Saira:wght@200&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
@@ -133,6 +136,10 @@ select {
   font-size: 16px;
   color: #4c4c4c;
 }
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
 h1 {
   font-size: 32px;
   font-weight: 300;
@@ -155,10 +162,10 @@ h1 {
   border: solid 1px #cbc9c9;
 }
 .testbox1{
-	height: 330px; 
+	height: 340px; 
 }
 .testbox2{
-	height: 290px; 
+	height: 340px; 
 }
 .testbox3{
 	height: 185px; 

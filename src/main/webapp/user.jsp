@@ -11,8 +11,13 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Saira:wght@200&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -24,7 +29,7 @@
 <div class="navbar navbar-inverse" style="margin-bottom:0px;">
 <div class="nav-container">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>cinephile</b></a>
+		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b id="brand">cinephile</b></a>
 	</div>
 	<ul class="nav navbar-nav navbar-right">
 		<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>admin login</a></li> -->
@@ -249,7 +254,7 @@
     </table>
   </div>
 </div>
-<div class="testbox3"  style="float:right; margin-right:150px;">
+<div class="testbox3">
         <h1>Book Movie</h1>
        
 
