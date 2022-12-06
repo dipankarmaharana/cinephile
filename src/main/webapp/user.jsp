@@ -26,14 +26,14 @@
 </head>
 
 
-<div class="navbar navbar-inverse" style="margin-bottom:0px;">
+<div class="navbar navbar-inverse" style="margin-bottom:0%;">
 <div class="nav-container">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b id="brand">cinephile</b></a>
+		<a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b class="brand"><span id="hl">cine</span>phile</b></a>
 	</div>
 	<ul class="nav navbar-nav navbar-right">
-		<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>admin login</a></li> -->
-		       <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><b> admin login</b></a></li> -->
+	<li><a href="#book"><b>book tickets</b> </a></li>
+		       <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span><b> admin login</b></a></li>
 	</ul>
 </div>
 </div>
@@ -46,7 +46,6 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Admin Login</h4>
           </div>
           <div class="modal-body">
             
@@ -112,9 +111,6 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<br>
-<br>
-<br>
 
 <!-- <div class="container">
     Modal
@@ -133,6 +129,8 @@
         <input type="password" name="Password" placeholder="Password">
         <input type="submit" class="btn btn-primary">
     </form> -->
+    
+    <div class="heading"><span id="hl2">now</span> showing</div>
 
 
 <div class="card-container">
@@ -253,13 +251,19 @@
         </tbody>
     </table>
   </div>
+  <br>
 </div>
-<div class="testbox3">
-        <h1>Book Movie</h1>
+<hr>
+
+</form>
+
+<div class="testbox3" id="book">
+<br>
+        <h1> Book Movie</h1>
        
 
           <input type="number" name="num" placeholder="No. Of Seats">
-          <br />
+          <br>
           <select name="class">
               <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
@@ -269,6 +273,5 @@
           <input class="btn btn-primary" type="submit" value="BOOK NOW">
       
 </div>
-</form>
 
 </html>

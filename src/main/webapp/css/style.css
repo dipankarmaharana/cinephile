@@ -7,10 +7,38 @@
 
 
 @charset "UTF-8";
-#brand{
+.brand{
 	margin-left:125px;
+	color: white;
 }
 
+*{
+	scroll-behavior: smooth;
+	padding:0;
+	margin:0;
+}
+
+.heading{
+	font-size: 300%;
+	background-color: black;
+	color:white;
+	padding-top:60px;
+	padding-bottom: 20px;
+}
+
+#hl,#hl2{
+	color:#FFE227;
+}
+
+.navbar-header{
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+
+.navbar-nav{
+	padding-top: 35px;
+	margin-left: 10rem;
+}
 img{
 	height: 500px;
 	width: 350px;
@@ -37,7 +65,11 @@ body{
 }
 
 *{
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Nunito';
+}
+
+body{
+	text-align: center;
 }
 
 .intro{
@@ -91,5 +123,8 @@ card:hover img{
 
 .textbox3{
   text-align: center;
-  top: 50px
+  position: absolute;
+  margin-left:30px;
+  
+  
 }
