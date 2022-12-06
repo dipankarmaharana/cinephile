@@ -48,6 +48,13 @@
 	padding-top:35px;
 	padding-bottom: 20px;
 }
+
+#carousel-example-generic{
+/* 	background-color:rgb(27,27,27); */
+	background-image: linear-gradient(to left,black,yellow,black);
+
+}
+
 .navbar-header{
 	padding-top: 20px;
 	padding-bottom: 15px;
@@ -56,30 +63,13 @@
 .navbar-nav{
 	padding-top: 35px;
 	margin-left: 10rem;
+	margin-right: 125px;
 }
 img{
 	height: 500px;
 	width: 350px;
 	border-radius:5px;
 /* 	object-fit: cover; */
-}
-
-.card-container{
-	display: flex;
-}
-	
-body{
-/* 	display: flex;	 */
-	justify-content: center;
-	height: 100vh;
-	align-items: center;
-}
-
-.card{
-	height: 500px;
-	margin: 50px;
-	box-shadow: 5px 5px 20px black; 
-	overflow: hidden;
 }
 
 *{
@@ -156,7 +146,29 @@ card:hover img{
 	background-color: black;
 }
 
+.card-container{
+	display: flex;
+	width:100%;
+	flex-wrap:wrap;
+}
 
+.cards{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	background:whitesmoke;  
+}
+
+.card{
+	height: 500px;
+	width:350px;
+	margin: 50px;
+	box-shadow: 5px 5px 20px black; 
+	overflow: hidden;
+	border-radius:5px;
+/* 	width:100%; */
+}
 
 
 .btn:hover{

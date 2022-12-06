@@ -76,27 +76,27 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="Images/Avatar-The-Way-Of-Water-Header.webp" style="width:1100px; height:600px;">
-      <div class="carousel-caption">
+  <div class="carousel-inner" role="listbox" style="height:600px">
+    <div class="item active" align="center" >
+      <img src="Images/Avatar-The-Way-Of-Water-Header.webp" style="width:1100px; height:100%;">
+    <!--   <div class="carousel-caption" align="center">
         <b>Movie 1</b>
-      </div>
+      </div> -->
     </div>
-    <div class="item">
-      <img src="Images/black-panther-wakanda-forever-movie-review-002.jpg" alt="..." style="width:1100px;height:600px;">
-      <div class="carousel-caption">
+ 
+    <div class="item" align="center">
+      <img src="Images/black-panther-wakanda-forever-movie-review-002.jpg" alt="..." style="width:1150px;height:100%;">
+     <!--  <div class="carousel-caption">
        <b>Movie 2</b>
-      </div>
+      </div> -->
     </div>
-    <div class="item">
-      <img src="Images/maxresdefault.jpg" alt="..." style="width:1100px;height:600px;">
-      <div class="carousel-caption">
+    <div class="item" align="center">
+      <img src="Images/maxresdefault.jpg" alt="..." style="width:1100px;height:100%; ">
+      <!-- <div class="carousel-caption">
       <b>Movie 3</b>
-      </div>
+      </div> -->
     </div>
-  </div>
-  
+  </div>  
   
   
  
