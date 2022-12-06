@@ -22,14 +22,24 @@
 	font-size: 300%;
 	background-color: black;
 	color:white;
-	padding-top:60px;
+	padding-top:70px;
 	padding-bottom: 20px;
 }
 
-#hl,#hl2{
+#hl,#hl2,#hl3{
 	color:#FFE227;
 }
 
+.footer-data{
+	color: white;
+	text-align: center;
+}
+
+.footer{
+	width:100%;
+	position: absolute;
+	background-color: black;
+}
 .navbar-header{
 	padding-top: 20px;
 	padding-bottom: 15px;
@@ -97,6 +107,10 @@ p{
 /* 	bottom:1500px; */
 }
 
+.btn{
+	margin-bottom: 5%;	
+}
+
 span{
 	font-weight:bold;
 }
@@ -123,8 +137,10 @@ card:hover img{
 
 .textbox3{
   text-align: center;
-  position: absolute;
-  margin-left:30px;
+  position: fixed;
+  bottom:0;
+  width:100%;
+ 
   
   
 }

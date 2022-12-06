@@ -164,9 +164,10 @@
 
 	</div>
 </div>
+<div class="heading"><span id="hl3">box</span> office</div>
 <form action="book" method="post">
 <div>
-<div class="container" style="float:left; margin-left:150px;">
+<div class="container">
     <table class="table table-hover">
         <thead>
             <tr>
@@ -253,13 +254,10 @@
   </div>
   <br>
 </div>
-<hr>
-
-</form>
-
+<br>
 <div class="testbox3" id="book">
 <br>
-        <h1> Book Movie</h1>
+        <!-- <div class="heading"><span id="hl3">book</span> tickets</div> -->
        
 
           <input type="number" name="num" placeholder="No. Of Seats">
@@ -273,5 +271,13 @@
           <input class="btn btn-primary" type="submit" value="BOOK NOW">
       
 </div>
+
+</form>
+
+<div class="footer">
+	<p class="footer-data">Copyright 2022 Cinephile India Pvt Ltd. All rights reserved.</p>
+</div>
+
+</body>
 
 </html>
