@@ -9,4 +9,44 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UserInput</display-name>
+    <servlet-name>UserInput</servlet-name>
+    <servlet-class>UserInput</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInput</servlet-name>
+    <url-pattern>/UserInput</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserInputTwo</display-name>
+    <servlet-name>UserInputTwo</servlet-name>
+    <servlet-class>UserInputTwo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserInputTwo</servlet-name>
+    <url-pattern>/userinput</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Schedule</display-name>
+    <servlet-name>Schedule</servlet-name>
+    <servlet-class>Schedule</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Schedule</servlet-name>
+    <url-pattern>/schedule</url-pattern>
+  </servlet-mapping>
 </web-app>
