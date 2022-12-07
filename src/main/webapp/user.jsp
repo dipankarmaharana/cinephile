@@ -23,7 +23,15 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport"content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+</script>
 </head>
+
 
 
 <div class="navbar navbar-inverse" style="margin-bottom:0%;">
@@ -138,28 +146,31 @@
 		<img alt="Movie 1"
 			src="Images/avatar.jpeg">
 		<div class="intro">
-			<h1>Movie 1</h1>
-			<p>This is movie 1</p>
+<!-- 			<h3>Avatar: The Way of Water</h3> -->
+			<p>Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.<br><span>Director</span>
+: James Cameron</p>
 		</div>
 
 	</div>
 	
 	<div class="card">
-		<img alt="Movie 1"
-			src="Images/Drishyam 2.jpg">
-		<div class="intro">
-			<h1>Movie 2</h1>
-			<p>This is movie 2</p>
-		</div>
-
-	</div>
-	
-	<div class="card">
-		<img alt="Movie 1"
+		<img alt="Movie 2"
 			src="Images/Wakanda Forever.jpg">
 		<div class="intro">
-			<h1>Movie 3</h1>
-			<p>This is movie 3</p>
+<!-- 			<h3>Black Panther: Wakanda Forever</h3> -->
+			<p>Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T'Challa's death.<br><span>Director</span>
+: Ryan Coogler</p>
+		</div>
+
+	</div>
+	
+	<div class="card">
+		<img alt="Movie 3"
+			src="Images/Drishyam 2.jpg">
+		<div class="intro">
+<!-- 			<h3>Drishyam 2</h3> -->
+			<p>Seven years after the case related to Vijay and his family was closed, a series of unexpected events brings a truth to light that threatens to change everything for the Salgaonkars.<br><span>Director</span>
+: Abhishek Pathak</p>
 		</div>
 
 	</div>
@@ -253,35 +264,45 @@
     </table>
   </div>
   <br>
-</div>
+ </div>
 <br>
-<div class="testbox3" id="book">
-<br>
-        <!-- <div class="heading"><span id="hl3">book</span> tickets</div> -->
-       <div>
-       <div class="t">
-       <input type="number" name="num" placeholder="No. Of Seats">
-          </div>
-          <select name="class">
+
+      
+     
+
+
+
+<!--     <div class="textbox3" > -->
+
+        
+
+ 
+
+        <form class="form-inline">
+
+<!--             <label for="seat">Username:</label> -->
+
+            <input type= "number" class="form-control" id="num" placeholder="No. of seats">
+			<select class="rates">
               <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
               <option value="premium">Premium - Rs.320</option>
         </select>
-          <br /><br />
-          <input class="btn btn-primary" type="submit" value="book now">
-          
-          </div>
-      
-</div>
 
-</form>
+<!--             </div> -->
+          <input  type="submit" value="book now" id="btn">
+          
+<!--           </div> -->
+        </form>
+
+<!--     </div> -->
 
 <div class="footer">
-	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</h5>
+	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>
 	<br>
 	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
 </div>
 
-</body>
+<!-- </body> -->
 
 </html>

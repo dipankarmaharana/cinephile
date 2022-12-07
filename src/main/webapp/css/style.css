@@ -51,16 +51,17 @@
 
 #carousel-example-generic{
 /* 	background-color:rgb(27,27,27); */
-	background-image: linear-gradient(to left,black,yellow,black);
+	background-image: linear-gradient(to left,black,grey,black);
 
 }
 
 .navbar-header{
 	padding-top: 20px;
 	padding-bottom: 15px;
+	margin:auto;
 }
 
-.navbar-nav{
+ul.nav.navbar-nav.navbar-right{
 	padding-top: 35px;
 	margin-left: 10rem;
 	margin-right: 125px;
@@ -86,29 +87,38 @@ body{
 	padding:6px;
 	box-sizing: border-box;
 	position: absolute;
-	top: 1095px;
 	background: rgb(27,27,27,0.5);
 	color: white;
-	transition:0.5s;
+	transition:0.8s;
+	display: grid;
+		bottom:1300px;
+/* grid-auto-flow: column; */
+/* grid-column-gap: 30px; */
+border-radius:15px;
 }
-
-h1{
+span{
+	color:#FFE227;
+	}
+h3{
 	margin: 10px;
 	font-size: 40px;
 }
 
 p{
-	font-size: 20px;
+	font-size: 18px;
 	margin: 20px;
 	visibility: hidden;
 	opacity: 0;
-/* 	bottom:1500px; */
+	bottom:1300px;
+/* 	background: rgb(27,27,27,0.5); */
+	border-radius:15px;
+	transition:0.8s;
 }
 
-.btn{
+/* .btn{
 	margin-bottom: 5%;	
 }
-
+ */
 span{
 	font-weight:bold;
 }
@@ -119,31 +129,58 @@ span{
 
 .card:hover .intro{
 	height: 220px;
-	bottom: 240px;
-	background: black;
+	top: 1150px;
+	background: #646464,0.7;
 }
 
 .card:hover p{
 	opacity: 1;
 	visibility: visible;
+	transition:0.8s;
 }
 
-card:hover img{
-	transform: scale(111) rotate(-3deg);
+.card:hover img{
+	transition:0.8s;
+	transform: scale(1.1) rotate(-3deg);
 	
 }
-
-.textbox3{
-  text-align: center;
-  position: fixed;
-  bottom:0;
-  width:100%;
- 
-  
-  
+.form-inline{
+/* 	background-color:black; */
+	margin:40px;
+	display: grid;
+grid-auto-flow: column;
+grid-column-gap: 30px;
+border-radius:15px;
 }
-.btn{
+.book{
+	margin-left:30px;
+	width:30px;
+	height:50px;
+	padding-left:50px;
+	border:30px;
+}
+.num{
+/*   text-align: center; */
+/* /*   position: fixed; */ 
+  padding:5px;
+  height:50px;
+  width:200px;
+  border-radius:5px;
+
+/* 	display:flex;	 */
+/* 	float:left;   */
+/* margin-left:20px; */
+/* align-items:left; */
+}
+
+.form-inline{
+	margin:10px;
+}
+#btn{
 	background-color: black;
+	color:white;
+	border-radius:15px;
+	width:40%;
 }
 
 .card-container{
@@ -152,13 +189,13 @@ card:hover img{
 	flex-wrap:wrap;
 }
 
-.cards{
+/* .cards{
 	display: flex;
 	justify-content: center;
 	height: 100vh;
 	align-items: center;
 	background:whitesmoke;  
-}
+} */
 
 .card{
 	height: 500px;
@@ -171,7 +208,10 @@ card:hover img{
 }
 
 
-.btn:hover{
+
+#btn:hover{
 	background-color:black;
 	color:#FFE227;
 }
+
+

@@ -23,13 +23,13 @@
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b>cinephile</b></a>
+      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b><span id="hl4">cine</span>phile</b></a>
     </div>
   </div>
 </nav>
-
-<center>
-	<div style="float: left; margin-left: 100px;">
+<!-- <div class="cards"> -->
+<center style="margin:10px;">
+	<div style="float: left; margin-left: 30px;margin-top:50px;">
 		<div class="testbox1">
 		  <h1>Add Movie</h1>
 		  <form action="userinput" method="post">
@@ -44,8 +44,8 @@
 		</div>
 	</div>
 
-	<div style="float: right; margin-right: 50px;">
-		<div style="float: left; margin-right: 150px;">
+<!-- 	<div style="float: right; margin-right: 50px;"> -->
+		<div style="float: left; margin-left: 30px;margin-top:50px;">
 			<div class="testbox2">
 			  <h1>Schedule Movie</h1>
 			  <form action="schedule" method="POST">
@@ -60,7 +60,7 @@
 			</div>
 		</div>
 
-		<div style="float: right;">
+		<div style="float: left; margin-left:30px;margin-top:50px;">
 			<div class="testbox3">
 			  <h1>Delete Movie</h1>
 			  <form action="delete" method="POST">
@@ -71,10 +71,12 @@
 			  </form>
 			</div>
 		</div>
-	</div>
+		<br>
+		<div></div>
+<!-- 	</div> -->
 </center>
 
-
+.rat
 
 <div>
     <div class="container">
@@ -123,11 +125,27 @@
     </div>
 </div>
 
+ 
+ 
+<div class="footer">
+	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>
+	<br>
+	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
+</div>
+
 <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { 
   padding:0;
   margin:0;}
+  
+a.navbar-brand{
+	margin-left:125px;
+	color: white;
+}
+ center{
+ background-color:#ggggg:
+ } 
 body,
 input,
 textarea,
@@ -136,10 +154,17 @@ select {
   font-size: 16px;
   color: #4c4c4c;
 }
-
+#hl,#hl2,#hl3,#hl4{
+	color:#FFE227;
+}
 *{
 	font-family: 'Nunito', sans-serif;
 }
+center{
+display: flex;
+	width:100%;
+	flex-wrap:wrap;
+	}
 h1 {
   font-size: 32px;
   font-weight: 300;
@@ -156,9 +181,9 @@ h1 {
   -moz-border-radius: 8px/7px; 
   border-radius: 8px/7px; 
   background-color: #ebebeb; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.9); 
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.9); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.9); 
   border: solid 1px #cbc9c9;
 }
 .testbox1{
@@ -191,6 +216,19 @@ input[type=text],input[type=password]{
 input[type=password]{
   margin-bottom: 25px;
 }
+
+.footer{
+	width:100%;
+	position: absolute;
+	background-color: black;
+	color:white;
+	padding-top:35px; 
+padding-bottom: 20px;
+text-align:center;
+	
+}
+.brand-footer,.footer-data{
+text-align:center;}
 </style>
 
 </html>
