@@ -21,9 +21,9 @@
 </head>
 
 <nav class="navbar navbar-inverse">
-  <div class="container">
+  <div class="nav-container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b><span id="hl4">cine</span>phile</b></a>
+      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b class="nav-brand" style="color:#ffffff"><span id="hl4">cine</span>phile</b></a>
     </div>
   </div>
 </nav>
@@ -76,7 +76,7 @@
 </center>
 <div>
     <div class="container">
-	    <table class="table table-hover" style="margin-top: 350px;">
+	    <table class="table table-hover" style="margin: 30px ;">
 	        <thead>
 	            <tr>
 	            	<th><b>ID</b></th>
@@ -132,13 +132,13 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { 
   padding:0;
   margin:0;}
-  
-a.navbar-brand{
+/*   
+b.navbar-brand{
 	margin-left:125px;
 	color: white;
-}
+} */
  center{
- background-color:#ggggg:
+ background-color:black:
  } 
 body,
 input,
@@ -154,6 +154,26 @@ select {
 *{
 	font-family: 'Nunito', sans-serif;
 }
+/* 
+.brand{
+	color:white;
+}
+ */
+.nav-container{
+height:85px;
+/* padding-top:70px; */
+	padding-top: 20px;
+	padding-left:125px;
+};
+
+.navbar-brand{
+	color= white;
+}
+
+.container{
+	padding-top:0;
+}
+
 center{
 display: flex;
 	width:100%;

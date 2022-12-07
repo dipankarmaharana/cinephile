@@ -23,13 +23,13 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<meta name="viewport"content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
 </script>
 <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 
 
@@ -175,7 +175,7 @@
 
 	</div>
 </div>
-<div class="heading"><span id="hl3">box</span> office</div>
+<div class="heading" id="book"><span id="hl3">box</span> office</div>
 <form action="book" method="post">
 <div>
 <div class="container">
@@ -272,17 +272,17 @@
 
 
 
-<!--     <div class="textbox3" > -->
+    <div class="textbox3" >
 
         
 
  
 
-        <form class="form-inline">
+
 
 <!--             <label for="seat">Username:</label> -->
 
-            <input type= "number" class="form-control" name="num" placeholder="No. of seats">
+            <input type= "number" name="num" placeholder="No. of seats">
 			<select class="rates" name="class">
               <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
@@ -290,9 +290,9 @@
         </select>
 
 <!--             </div> -->
-          <input  type="submit" value="book now" id="btn">
+          <input  type="submit" value="book now" id="btn btn-book">
           
-<!--           </div> -->
+          </div>
         </form>
 
 <!--     </div> -->
