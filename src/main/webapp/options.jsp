@@ -71,17 +71,11 @@
 			  </form>
 			</div>
 		</div>
-		<br>
-		<div></div>
+
 <!-- 	</div> -->
 </center>
-
-.rat
-
 <div>
     <div class="container">
-    <br />
-	        	<br />
 	    <table class="table table-hover" style="margin-top: 350px;">
 	        <thead>
 	            <tr>

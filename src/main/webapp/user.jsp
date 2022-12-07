@@ -282,8 +282,8 @@
 
 <!--             <label for="seat">Username:</label> -->
 
-            <input type= "number" class="form-control" id="num" placeholder="No. of seats">
-			<select class="rates">
+            <input type= "number" class="form-control" name="num" placeholder="No. of seats">
+			<select class="rates" name="class">
               <option value="normal">Normal - Rs.280</option>
               <option value="executive">Executive - Rs.300</option>
               <option value="premium">Premium - Rs.320</option>
