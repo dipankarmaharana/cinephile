@@ -74,6 +74,7 @@ public class Book extends HttpServlet {
           int number =Integer.parseInt(num);
           cost*=number;
           System.out.println(cost);
+          int price,no;
           switch(screen){
           	case 1: if(slot==1)
           			{
@@ -83,7 +84,23 @@ public class Book extends HttpServlet {
           				htmlResponse += "<center><h2>Show Full</h2><br/></center>"; 
           			}
           			else{
-          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
+						/*
+						 * htmlResponse +=
+						 * "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Booking Successful</h2><hr><br/><h3>Total : Rs."
+						 * + cost + "</h3><br><hr><p>Booking Details: "+ number+" x "
+						 * +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "
+						 * +screen+"</h2><br><h2>Slot: "
+						 * +slot+"</h2><p>Kindly show the booking details and collect the tickets from the counter.<br>100% cancellation charges will be levied upon cancellation after a successful booking.</p></div></center>"
+						 * ;
+						 */
+          				request.setAttribute("cost",cost);
+          				request.setAttribute("number",number);
+          				request.setAttribute("sType",sType);
+          				request.setAttribute("name",name);
+          				request.setAttribute("duration",duration);
+          				request.setAttribute("screen",screen);
+          				request.setAttribute("slot",slot);
+          				request.getRequestDispatcher("confirm.jsp").forward(request, response);
   	          			query = " update shows set booked="+m.booked+" where id="+showId;
   	          			System.out.println(query);
   	          			Statement smt = conn.createStatement();
@@ -98,7 +115,15 @@ public class Book extends HttpServlet {
               			}
               			else{
               				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-      	          		query = " update shows set booked="+m.booked+" where id="+showId;
+              				request.setAttribute("cost",cost);
+              				request.setAttribute("number",number);
+              				request.setAttribute("sType",sType);
+              				request.setAttribute("name",name);
+              				request.setAttribute("duration",duration);
+              				request.setAttribute("screen",screen);
+              				request.setAttribute("slot",slot);
+              				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+              				query = " update shows set booked="+m.booked+" where id="+showId;
       	          	System.out.println(query);
       	          Statement smt = conn.createStatement();
           			smt.executeUpdate(query);
@@ -112,7 +137,15 @@ public class Book extends HttpServlet {
               			}
               			else{
               				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-      	          		query = " update shows set booked="+m.booked+" where id="+showId;
+              				request.setAttribute("cost",cost);
+              				request.setAttribute("number",number);
+              				request.setAttribute("sType",sType);
+              				request.setAttribute("name",name);
+              				request.setAttribute("duration",duration);
+              				request.setAttribute("screen",screen);
+              				request.setAttribute("slot",slot);
+              				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+              				query = " update shows set booked="+m.booked+" where id="+showId;
       	          	System.out.println(query);
       	          	Statement smt = conn.createStatement();
           			smt.executeUpdate(query);
@@ -128,7 +161,15 @@ public class Book extends HttpServlet {
       			}
       			else{
       				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-	          			query = " update shows set booked="+m.booked+" where id="+showId;
+      				request.setAttribute("cost",cost);
+      				request.setAttribute("number",number);
+      				request.setAttribute("sType",sType);
+      				request.setAttribute("name",name);
+      				request.setAttribute("duration",duration);
+      				request.setAttribute("screen",screen);
+      				request.setAttribute("slot",slot);
+      				request.getRequestDispatcher("confirm.jsp").forward(request, response);	
+      				query = " update shows set booked="+m.booked+" where id="+showId;
 	          			System.out.println(query);
 	          			Statement smt = conn.createStatement();
   	          			smt.executeUpdate(query);
@@ -142,7 +183,15 @@ public class Book extends HttpServlet {
   	          			}
   	          			else{
   	          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-  	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
+  	          			request.setAttribute("cost",cost);
+          				request.setAttribute("number",number);
+          				request.setAttribute("sType",sType);
+          				request.setAttribute("name",name);
+          				request.setAttribute("duration",duration);
+          				request.setAttribute("screen",screen);
+          				request.setAttribute("slot",slot);
+          				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+  	          				query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	        Statement smt = conn.createStatement();
         			smt.executeUpdate(query);
@@ -156,7 +205,15 @@ public class Book extends HttpServlet {
   	          			}
   	          			else{
   	          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-  	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
+  	          			request.setAttribute("cost",cost);
+          				request.setAttribute("number",number);
+          				request.setAttribute("sType",sType);
+          				request.setAttribute("name",name);
+          				request.setAttribute("duration",duration);
+          				request.setAttribute("screen",screen);
+          				request.setAttribute("slot",slot);
+          				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+  	          				query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	        Statement smt = conn.createStatement();
         			smt.executeUpdate(query);
@@ -172,7 +229,15 @@ public class Book extends HttpServlet {
       			}
       			else{
       				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-	          			query = " update shows set booked="+m.booked+" where id="+showId;
+      				request.setAttribute("cost",cost);
+      				request.setAttribute("number",number);
+      				request.setAttribute("sType",sType);
+      				request.setAttribute("name",name);
+      				request.setAttribute("duration",duration);
+      				request.setAttribute("screen",screen);
+      				request.setAttribute("slot",slot);
+      				request.getRequestDispatcher("confirm.jsp").forward(request, response);	
+      				query = " update shows set booked="+m.booked+" where id="+showId;
 	          			System.out.println(query);
 	          			Statement smt = conn.createStatement();
   	          			smt.executeUpdate(query);
@@ -186,7 +251,15 @@ public class Book extends HttpServlet {
   	          			}
   	          			else{
   	          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div></center>"; 
-  	  	          		query = " update shows set booked="+m.booked+" where id="+showId;
+  	          			request.setAttribute("cost",cost);
+          				request.setAttribute("number",number);
+          				request.setAttribute("sType",sType);
+          				request.setAttribute("name",name);
+          				request.setAttribute("duration",duration);
+          				request.setAttribute("screen",screen);
+          				request.setAttribute("slot",slot);
+          				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+  	          				query = " update shows set booked="+m.booked+" where id="+showId;
   	  	          	System.out.println(query);
   	  	        Statement smt = conn.createStatement();
         			smt.executeUpdate(query);
@@ -199,8 +272,16 @@ public class Book extends HttpServlet {
   	          				htmlResponse += "<center><h2>Show Full</h2><br/></center>"; 
   	          			}
   	          			else{
-  	          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Tickets Booked</h2><hr><br/><h3>Please pay Rs." + cost + "</h3><br><hr><p>order: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div><a href='user.jsp'>home</center>"; 
-  	          		query = " update shows set booked="+m.booked+" where id="+showId;
+  	          				htmlResponse += "<center><div style='border:1px solid black; border-radius:3px; width:400px;'><h2>Booking Successful</h2><hr><br/><h3>Booking Total: Rs." + cost + "</h3><br><p>Kindly show the booking details and collect the tickets from the counter.</p><hr><p>Booking Details: "+ number+" x " +sType+" tickets<br>Movie: "+name+"- ("+duration+" minutes)</p><h2>Screen: "+screen+"</h2><br><h2>Slot: "+slot+"</h2></div><a href='user.jsp'>home</center>"; 
+  	          			request.setAttribute("cost",cost);
+          				request.setAttribute("number",number);
+          				request.setAttribute("sType",sType);
+          				request.setAttribute("name",name);
+          				request.setAttribute("duration",duration);
+          				request.setAttribute("screen",screen);
+          				request.setAttribute("slot",slot);
+          				request.getRequestDispatcher("confirm.jsp").forward(request, response);
+  	          				query = " update shows set booked="+m.booked+" where id="+showId;
   	          		System.out.println(query);
   	          	Statement smt = conn.createStatement();
         			smt.executeUpdate(query);
@@ -214,7 +295,7 @@ public class Book extends HttpServlet {
           
           conn.close();
           htmlResponse += "</html>";
-          writer.println(htmlResponse);
+			/* writer.println(htmlResponse); */
 
         }
         catch (Exception e)

@@ -299,6 +299,7 @@
 
 <div class="footer">
 	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>
+	<p id="meta">ABOUT US   |   TERMS OF SERVICE   |   PRIVACY POLICY   |   SITE DATA </p>
 	<br>
 	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
 </div>

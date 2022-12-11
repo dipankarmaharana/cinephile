@@ -31,7 +31,7 @@
 <center style="margin:10px;">
 	<div style="float: left; margin-left: 30px;margin-top:50px;">
 		<div class="testbox1">
-		  <h1>Add Movie</h1>
+		  <h1>add Movie</h1>
 		  <form action="userinput" method="post">
 		  <input type="text" name="id" placeholder="Movie ID" required/>
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
@@ -124,6 +124,7 @@
 <div class="footer">
 	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>
 	<br>
+	<p class="meta">ABOUT US   |   TERMS OF SERVICE   |   PRIVACY POLICY   |   SITE DATA </p>
 	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
 </div>
 
@@ -243,6 +244,11 @@ text-align:center;
 }
 .brand-footer,.footer-data{
 text-align:center;}
+
+.meta{
+	margin-bottom: 20px;
+	font-size: 10px;
+}
 </style>
 
 </html>
