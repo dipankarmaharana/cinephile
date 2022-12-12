@@ -77,7 +77,7 @@ span{
 	}
       body {
         text-align: center;
-        padding: 40px 0;
+        /* padding: 40px 0; */
         background: #EBF0F5;
       }
         h1 {
@@ -94,7 +94,7 @@ span{
       i {
         color: #9ABC66;
         font-size: 50px;
-        line-height: 100px;
+        line-height: 70px;
         margin-left:-15px;
       }
       .card {
@@ -111,6 +111,12 @@ span{
 	font-size: 10px;
 	color: white;
 }
+.bid{
+font-size: 15px;
+}
+.note{
+font-size: 10px;
+}
     </style>
     <body>
     <div class="navbar navbar-inverse" style="margin-bottom:0%;">
@@ -126,10 +132,10 @@ span{
 </div>
       <div class="card">
       <div style="border-radius:70px; height:70px; width:70px; background: #F8FAF5; margin:0 auto;">
-        <i class="checkmark">✓</i>
+        <i class="checkmark">&#x2713</i>
       </div>
         <h1>Booking Successful</h1> 
-        <h4>Total : Rs. <%= request.getAttribute("cost") %></h4><br><hr><p>Booking Details: <%= request.getAttribute("number") %> x <%= request.getAttribute("sType") %> tickets<br>Movie: <%= request.getAttribute("name") %>- (<%= request.getAttribute("duration") %> minutes)</p><h4>Screen: <%= request.getAttribute("screen") %></h4><br><h4>Slot: <%= request.getAttribute("slot") %></h4><p>Kindly show the booking details and collect the tickets from the counter.<br>100% cancellation charges will be levied upon cancellation after a successful booking.</p>
+        <h4>Total : Rs. <%= request.getAttribute("cost") %></h4><h5><%= request.getAttribute("number") %> x <%= request.getAttribute("sType") %> tickets</p><br><p class="bid">BOOKING ID: CIOD22</p><hr><p>Movie: <%= request.getAttribute("name") %>- (<%= request.getAttribute("duration") %> minutes)</p><h4>Screen: <%= request.getAttribute("screen") %></h4><br><h4>Slot: <%= request.getAttribute("slot") %></h4><p class="note">Kindly show the booking details and collect the tickets from the counter/kiosk.<br>100% cancellation charges will be levied upon cancellation after a successful booking.</p>
       </div>
       <div class="footer">
 	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>

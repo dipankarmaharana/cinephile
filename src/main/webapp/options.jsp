@@ -25,13 +25,16 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b class="nav-brand" style="color:#ffffff"><span id="hl4">cine</span>phile</b></a>
     </div>
+    <!-- <ul class="nav navbar-nav navbar-right" style="padding-right: 125px;">
+	<li><a href="user.jsp#"><b>logout</b> </a></li>
+	</ul -->>
   </div>
 </nav>
 <!-- <div class="cards"> -->
 <center style="margin:10px;">
 	<div style="float: left; margin-left: 30px;margin-top:50px;">
 		<div class="testbox1">
-		  <h1>add Movie</h1>
+		  <h1>add movie</h1>
 		  <form action="userinput" method="post">
 		  <input type="text" name="id" placeholder="Movie ID" required/>
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
@@ -47,7 +50,7 @@
 <!-- 	<div style="float: right; margin-right: 50px;"> -->
 		<div style="float: left; margin-left: 30px;margin-top:50px;">
 			<div class="testbox2">
-			  <h1>Schedule Movie</h1>
+			  <h1>schedule movie</h1>
 			  <form action="schedule" method="POST">
 			  <input type="text" name="showId" placeholder="Show ID">
 			  <input type="text" name="movieId" placeholder="Movie ID">
@@ -62,7 +65,7 @@
 
 		<div style="float: left; margin-left:30px;margin-top:50px;">
 			<div class="testbox3">
-			  <h1>Delete Movie</h1>
+			  <h1>delete movie</h1>
 			  <form action="delete" method="POST">
 	        	<input type="text" name="id" placeholder="Movie ID">
 	        	<br />
