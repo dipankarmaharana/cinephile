@@ -13,15 +13,19 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/login")
 public class admin extends HttpServlet {
 
-    protected void doPost(HttpServletRequest request,
+	private static final long serialVersionUID = 1L;
+
+	protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
          
         String Username = request.getParameter("Username");
         String Password = request.getParameter("Password");
 
          
-        System.out.println("Username admin: " + Username);
-        System.out.println("Password admin: " + Password);
+		/*
+		 * System.out.println("Username admin: " + Username);
+		 * System.out.println("Password admin: " + Password);
+		 */
         PrintWriter writer = response.getWriter();
          
         if(Username.equals("admin") && Password.equals("admin")){

@@ -21,17 +21,20 @@
 </head>
 
 <nav class="navbar navbar-inverse">
-  <div class="container">
+  <div class="nav-container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b><span id="hl4">cine</span>phile</b></a>
+      <a class="navbar-brand" href="user.jsp" style="font-size: 40px;"><b class="nav-brand" style="color:#ffffff"><span id="hl4">cine</span>phile</b></a>
     </div>
+    <!-- <ul class="nav navbar-nav navbar-right" style="padding-right: 125px;">
+	<li><a href="user.jsp#"><b>logout</b> </a></li>
+	</ul -->>
   </div>
 </nav>
 <!-- <div class="cards"> -->
 <center style="margin:10px;">
 	<div style="float: left; margin-left: 30px;margin-top:50px;">
 		<div class="testbox1">
-		  <h1>Add Movie</h1>
+		  <h1>add movie</h1>
 		  <form action="userinput" method="post">
 		  <input type="text" name="id" placeholder="Movie ID" required/>
 		  <input type="text" name="movieName" placeholder="Movie Name" required/>
@@ -47,7 +50,7 @@
 <!-- 	<div style="float: right; margin-right: 50px;"> -->
 		<div style="float: left; margin-left: 30px;margin-top:50px;">
 			<div class="testbox2">
-			  <h1>Schedule Movie</h1>
+			  <h1>schedule movie</h1>
 			  <form action="schedule" method="POST">
 			  <input type="text" name="showId" placeholder="Show ID">
 			  <input type="text" name="movieId" placeholder="Movie ID">
@@ -62,7 +65,7 @@
 
 		<div style="float: left; margin-left:30px;margin-top:50px;">
 			<div class="testbox3">
-			  <h1>Delete Movie</h1>
+			  <h1>delete movie</h1>
 			  <form action="delete" method="POST">
 	        	<input type="text" name="id" placeholder="Movie ID">
 	        	<br />
@@ -76,7 +79,7 @@
 </center>
 <div>
     <div class="container">
-	    <table class="table table-hover" style="margin-top: 350px;">
+	    <table class="table table-hover" style="margin: 30px ;">
 	        <thead>
 	            <tr>
 	            	<th><b>ID</b></th>
@@ -124,6 +127,7 @@
 <div class="footer">
 	<h5 class="brand-footer"><b><span id="hl4">cine</span>phile</b></h5>
 	<br>
+	<p class="meta">ABOUT US   |   TERMS OF SERVICE   |   PRIVACY POLICY   |   SITE DATA </p>
 	<h7 class="footer-data">&#169 2022 Cinephile India Pvt Ltd. All rights reserved.</h7>
 </div>
 
@@ -132,13 +136,13 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td { 
   padding:0;
   margin:0;}
-  
-a.navbar-brand{
+/*   
+b.navbar-brand{
 	margin-left:125px;
 	color: white;
-}
+} */
  center{
- background-color:#ggggg:
+ background-color:black:
  } 
 body,
 input,
@@ -154,6 +158,26 @@ select {
 *{
 	font-family: 'Nunito', sans-serif;
 }
+/* 
+.brand{
+	color:white;
+}
+ */
+.nav-container{
+height:85px;
+/* padding-top:70px; */
+	padding-top: 20px;
+	padding-left:125px;
+};
+
+.navbar-brand{
+	color= white;
+}
+
+.container{
+	padding-top:0;
+}
+
 center{
 display: flex;
 	width:100%;
@@ -223,6 +247,11 @@ text-align:center;
 }
 .brand-footer,.footer-data{
 text-align:center;}
+
+.meta{
+	margin-bottom: 20px;
+	font-size: 10px;
+}
 </style>
 
 </html>
